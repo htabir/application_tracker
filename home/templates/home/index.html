@@ -1,0 +1,262 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Application Tracker</title>
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link href="{% static 'home/css/theme.css' %}" rel="stylesheet"/>
+
+</head>
+
+
+<body>
+<main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html">
+            <div class="text-warning">Application</div>
+            <div class="text-1000">Tracker</div>
+        </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+                    <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-medium active"
+                                                                           aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-medium"
+                                                                           href="#features">Key Features</a></li>
+                    <li class="nav-item pl-2" data-anchor="data-anchor"><a class="nav-link fw-medium"
+                                                                           href="#faq">FAQ</a></li>
+                </ul>
+                <form class="ps-lg-5">
+                    <a href="#" class="btn btn-lg btn-primary rounded-pill order-0">Get Started</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-0" id="home">
+        <div class="bg-holder"
+             style="background-image:url({% static 'home/img/hero-bg.png' %});background-position:bottom;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container position-relative">
+            <div class="row align-items-center py-8">
+                <div class="col-md-5 col-lg-6 order-md-1 text-center text-md-end"><img class="img-fluid"
+                                                                                       src="{% static 'home/img/application.png' %}"
+                                                                                       width="450" alt=""/></div>
+                <div class="col-md-7 col-lg-6 text-center text-md-start">
+                    <h1 class="mb-4 display-3 fw-bold lh-sm">Track down your <br
+                            class="d-block d-lg-none d-xl-block"/>applications</h1>
+                    <p class="mt-3 mb-4 fs-1">Easiest way to record and track all the <br
+                            class="d-none d-lg-block"/>applications in one place.</p>
+                    <form>
+                        <div class="mb-3 form-group">
+                            <input
+                                    type="text"
+                                    class="form-control rounded-pill"
+                                    id="search"
+                                    name="search"
+                                    placeholder="Search with Application ID or Email"
+                            />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="features">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start">
+                    <img class="img-fluid" src="" width="550" alt=""/>
+                </div>
+                <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
+                    <h6 class="fw-bold fs-4 display-3 lh-sm">Features</h6>
+                    <p class="my-4">Save your time, ease the hassles.</p>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="px-4">
+                            <h5 class="fw-bold text-danger">Easy to use</h5>
+                            <p>Get started with your account. <br class="d-none d-xl-block"> entry every application now
+                                and then,<br class="d-none d-xl-block">change status whenever it needs.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="px-4">
+                            <h5 class="fw-bold text-primary">Track Easily</h5>
+                            <p>Search by application id <br class="d-none d-xl-block"> or your email to get everything
+                                <br class="d-none d-xl-block"> mapped with it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-6">
+
+        <div class="container">
+            <div class="row justify-content-center mb-6">
+                <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
+                    <h6 class="fw-bold fs-4 display-3 lh-sm">Why you should choose <br/>our app </h6>
+                    <p class="mb-0">We are living in a time of technological advancement,
+                        and people are striving to make life easier by utilizing new tools and programs.
+                        This application is one such example, helping to reduce the effort needed to complete tasks.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-6">
+                    <div class="text-center px-lg-3">
+                        <h5 class="fw-bold">Plug and Play</h5>
+                        <p class="mb-md-0">Open your account and start keeping record of every application.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-6">
+                    <div class="text-center px-lg-3">
+                        <h5 class="fw-bold">Easy to use</h5>
+                        <p class="mb-md-0">Update the states of the applications anytime.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-6">
+                    <div class="text-center px-lg-3">
+                        <h5 class="fw-bold">Track Anytime</h5>
+                        <p class="mb-md-0">Find your application, see where its sitting. Get the update anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+
+    <section class="py-8" id="faq">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 text-center mb-3">
+                    <h6 class="fw-bold fs-4 display-3 lh-sm mb-3">Frequently asked questions</h6>
+                    <p class="mb-5">Questions asked frequently and a small guideline for everyone.</p>
+                </div>
+            </div>
+            <div class="row flex-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><span
+                                        class="mb-0 fw-bold text-start fs-1 text-1000">How does this work?</span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse show" id="collapse1" aria-labelledby="heading1"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg-100">Any authority can create an account and start using
+                                    it.
+                                    The application is open to all. Authority have to entry applications, that will give
+                                    a unique
+                                    application id. This will be attached to the application. The entry is also mapped
+                                    with the email
+                                    id provided by the applicant. The authority can update the status of the application
+                                    anytime.
+                                    The application then later can be searched by the application id or the email id.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span
+                                        class="mb-0 fw-bold text-start fs-1 text-1000">How much money do I need to use it?</span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse" id="collapse2" aria-labelledby="heading2"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg-100">This is completely free to use. In fact the whole
+                                    project is open source and
+                                    can be expanded by anyone with more exciting features.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3"><span
+                                        class="mb-0 fw-bold text-start fs-1 text-1000">What if anyone knows my email search for my applications?</span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse" id="collapse3" aria-labelledby="heading3"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg-100">If searched with email, an otp will be sent on the
+                                    email. The otp will be valid for 5 minutes.
+                                    The otp will be required to view the applications.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+
+    <section class="py-8 bg-1000">
+
+        <div class="container">
+            <div class="row flex-center">
+                <div class="col-auto mb-5"><a class="pe-2 d-flex align-items-center text-decoration-none fw-bold fs-3"
+                                              href="#">
+                    <div class="text-warning">Application</div>
+                    <div class="text-white">Tracker</div>
+                </a></div>
+            </div>
+            <div class="row flex-center">
+                <div class="col-auto mb-5">
+                    <ul class="list-unstyled list-inline mb-0">
+                        <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Home</a>
+                        </li>
+                        <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Key
+                            Features</a></li>
+                        <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row flex-center">
+                <div class="col-auto">
+                    <p class="mb-0 fs--1 text-700">&copy; This project is made with&nbsp;
+                        <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                             fill="#ffffff" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+                        </svg>&nbsp;by&nbsp;<a class="text-700" href="https://htabir.me" target="_blank">htabir </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+
+</main>
+<script src="{% static 'home/vendors/popperjs/popper.min.js' %}"></script>
+<script src="{% static 'home/vendors/bootstrap/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/vendors/is/is.min.js' %}"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="{% static 'home/js/theme.js' %}"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"
+      rel="stylesheet">
+</body>
+
+</html>

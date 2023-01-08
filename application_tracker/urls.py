@@ -5,6 +5,7 @@ from django.urls import include, path
 from application_tracker.settings import env, MEDIA_ROOT, MEDIA_URL, STATIC_ROOT, STATIC_URL
 
 urlpatterns = [
+    path('', include('home.urls', namespace='home')),
     path('admin/', admin.site.urls),
 ]
 
